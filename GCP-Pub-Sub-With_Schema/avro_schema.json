@@ -1,0 +1,55 @@
+{
+    "type": "record",
+    "name": "TravelBooking",
+    "namespace": "com.example",
+    "fields": [
+      {
+        "name": "booking_id",
+        "type": "string"
+      },
+      {
+        "name": "user_id",
+        "type": "string"
+      },
+      {
+        "name": "hotel_id",
+        "type": "string"
+      },
+      {
+        "name": "booking_date",
+        "type": "string"
+      },
+      {
+        "name": "checkin_date",
+        "type": "string"
+      },
+      {
+        "name": "checkout_date",
+        "type": "string"
+      },
+      {
+        "name": "room_type",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "double"
+      },
+      {
+        "name": "currency",
+        "type": "string"
+      },
+      {
+        "name": "status",
+        "type": {
+          "type": "enum",
+          "name": "BookingStatus",
+          "symbols": [
+            "CONFIRMED",
+            "CANCELLED",
+            "PENDING"
+          ]
+        }
+      }
+    ]
+  }
